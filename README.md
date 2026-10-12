@@ -13,8 +13,15 @@ An interactive dashboard for a COMP 370 group research project on news coverage 
 | Language | Original TF-IDF weighting by topic, outlet, or filtered selection; optional term hiding; downloadable term scores |
 | Article explorer | Searchable annotations, original source links, article details, and CSV export |
 | Methodology | Data provenance, annotation limits, URL matching, and explicitly labeled simulated outlet scores |
+| Model lab | Classifier comparison, held-out accuracy and macro-F1, per-class errors, and development disagreements |
 
-Sidebar filters for outlet, topic, sentiment, and literal text search apply to all analytical views. Plotly charts support hover details and image downloads.
+Sidebar filters for outlet, topic, sentiment, and literal text search apply to article exploration. Model lab shows a fixed benchmark of the original annotations. Plotly charts support hover details and image downloads.
+
+## Supervised learning: first implementation
+
+The project now includes a reproducible model comparison and experimental batch labeling workflow. It compares word TF-IDF, character TF-IDF, frozen pretrained sentence embeddings, and SetFit against a majority-label baseline. Models are selected using development macro-F1 and evaluated on a separate headline-grouped test split.
+
+Read the [model workflow](docs/model_workflow.md) for setup and commands, the [benchmark results](reports/model_comparison/RESULTS.md) for measured scores, and the [annotation policy](docs/annotation_policy.md) for the confirmed sentiment definition. Existing annotations remain authoritative; predictions are stored separately and are not automatically added to the research charts.
 
 ## Run locally
 
@@ -23,20 +30,20 @@ Use **Python 3.11 or 3.12**. The dashboard runs entirely on committed data; it n
 ```bash
 git clone https://github.com/Abudyy/COMP_370_Final_Project.git
 cd COMP_370_Final_Project
-# Before the dashboard PR is merged, check out its branch:
-git checkout feature/media-lens-dashboard
+# To try the classifier additions before their PR is merged:
+git checkout feature/article-classifiers
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. Once the dashboard is merged, the branch checkout is unnecessary.
+On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. Once the classifier additions are merged, the branch checkout is unnecessary.
 
 ## Deploy on Streamlit Community Cloud
 
 1. Sign in at [Streamlit Community Cloud](https://share.streamlit.io/) and connect your GitHub account.
-2. Create an app with repository `Abudyy/COMP_370_Final_Project`, branch `feature/media-lens-dashboard` (or `main` after merging), and main file `app.py`.
+2. Create an app with repository `Abudyy/COMP_370_Final_Project`, branch `feature/article-classifiers` (or `main` after merging), and main file `app.py`.
 3. Select Python 3.12 in advanced settings and deploy. Dependencies are installed from `requirements.txt`; no secrets are required.
 4. Add the resulting public app URL to this README, your personal website, and your resume project entry.
 

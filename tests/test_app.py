@@ -16,8 +16,8 @@ def assert_clean(at):
 def test_dashboard_starts_with_real_data():
     at = app()
     assert_clean(at)
-    assert [m.value for m in at.metric] == ["484", "15", "6", "34.3%"]
-    assert [tab.label for tab in at.tabs] == ["Overview", "Outlet comparison", "Language", "Article explorer", "Methodology"]
+    assert [m.value for m in at.metric[:4]] == ["484", "15", "6", "34.3%"]
+    assert [tab.label for tab in at.tabs] == ["Overview", "Outlet comparison", "Language", "Article explorer", "Methodology", "Model lab"]
 
 
 def test_search_empty_selection_and_reset():
@@ -53,3 +53,13 @@ def test_language_controls_and_comparison_threshold():
     at.number_input[0].set_value(484).run()
     assert_clean(at)
     assert any("No outlet meets" in item.value for item in at.info)
+
+
+def test_model_lab_displays_both_prediction_tasks():
+    at = app()
+    assert_clean(at)
+    if not at.radio(key="benchmark_task"):
+        raise AssertionError("The committed comparison report is missing.")
+    at.radio(key="benchmark_task").set_value("Topic").run()
+    assert_clean(at)
+    assert any(metric.label == "Test macro-F1" for metric in at.metric)

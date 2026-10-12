@@ -1,0 +1,195 @@
+article_id,task,model,outlet_id,title,true_label,predicted_label,model_score,score_kind
+6c45eaecac4cff99,sentiment,embedding_lr,ny-daily-news,Mamdani rips Mayor Adams for making Elizabeth St. Garden housing project ‘nearly impossible’,Neutral,Positive,0.3486018856194141,uncalibrated_probability
+f81751898ef27364,sentiment,embedding_lr,ny-daily-news,NYC youth celebrate Mamdani win as first Muslim and South Asian mayor,Positive,Positive,0.6909514402326304,uncalibrated_probability
+4683ad56dc55c356,sentiment,embedding_lr,ny-daily-news,White House removes altered Knicks logo mocking Mamdani after team reached out: report,Negative,Negative,0.46633032512345357,uncalibrated_probability
+75e568785b9e4736,sentiment,embedding_lr,ny-daily-news,"FDNY Commissioner Robert Tucker resigns day after Mamdani mayoral win, Kaz Daughtry may go too",Neutral,Negative,0.5176018007154232,uncalibrated_probability
+122e31b9b8c35525,sentiment,embedding_lr,ny-daily-news,Zohran Mamdani’s win in NYC mayor race greeted with cheers and also some fear,Neutral,Positive,0.6830368773082994,uncalibrated_probability
+6746ab6c9a9ad00a,sentiment,embedding_lr,ny-daily-news,"Readers sound off on Jews for Mamdani, genocide scholars and shutdown apathy",Negative,Negative,0.7292919074381007,uncalibrated_probability
+0403e1243af1ce03,sentiment,embedding_lr,ny-daily-news,Zohran Mamdani v. Pat Moynihan: The anti-Zionist racist and the man who fought the UN’s ‘Zionism is racism’,Negative,Neutral,0.5058606839978972,uncalibrated_probability
+95e89ce1bbaf10eb,sentiment,embedding_lr,ny-daily-news,"Readers sound off on Democratic leadership, accountability for Israel and Giants failures",Neutral,Negative,0.48061319751365755,uncalibrated_probability
+173e67ddab3fd7ff,sentiment,embedding_lr,ny-daily-news,NYPD boss gets lucrative disability pension rank-and-file cops often have to fight for,Negative,Negative,0.5814110085742583,uncalibrated_probability
+d91870c167ac8b14,sentiment,embedding_lr,ny-daily-news,Maintain sanctuary in New York City,Neutral,Negative,0.48630894601487795,uncalibrated_probability
+2aeebe8d7260cfc5,sentiment,embedding_lr,ny-daily-news,More housing will give us more political power,Positive,Negative,0.37195594803743864,uncalibrated_probability
+1920241e0b5b3526,sentiment,embedding_lr,ny-daily-news,"Sweeping Long Island City rezoning approved, bringing 15,000 homes, waterfront development",Positive,Neutral,0.446636407954125,uncalibrated_probability
+8ceaab89ba52926a,sentiment,embedding_lr,ny-daily-news,NYPD cop who shot New Jersey driver in 2024 road-rage incident pleads guilty,Neutral,Neutral,0.5933299773903594,uncalibrated_probability
+484e0fd44f8a7dce,sentiment,embedding_lr,ny-daily-news,"Hours after bitter mayoral election ends, hate-filled vandals hit Jewish cemetery, yeshiva",Neutral,Negative,0.6091860300027657,uncalibrated_probability
+9b686edb22b261c3,sentiment,embedding_lr,ny-daily-news,A bitter year for independent voters,Neutral,Neutral,0.5051110713697632,uncalibrated_probability
+922b38748813e4f6,sentiment,embedding_lr,ny-daily-news,Question these ballot questions: Proposals 1 and 6 insult the New York State Constitution,Negative,Neutral,0.48945923870447156,uncalibrated_probability
+1bd318c2b9989f21,sentiment,embedding_lr,ny-daily-news,"More than 700,000 cast ballots in early voting as NYC mayoral race on track for historic turnout",Neutral,Neutral,0.657575919420574,uncalibrated_probability
+0c342d0abdeac077,sentiment,embedding_lr,ny-post,Nassau County executive challenges Hochul to draw line as DSA pressures her to back Mamdani tax hike,Negative,Neutral,0.4178148616032385,uncalibrated_probability
+3599909c21c0f662,sentiment,embedding_lr,ny-post,Adams meets with Netanyahu on taxpayer-funded Israel trip – rips Mayor-elect Zohran Mamdani,Neutral,Neutral,0.5804896796285395,uncalibrated_probability
+ad9da59fc6c611f4,sentiment,embedding_lr,ny-post,Oscar-winner tells Trump he must save New York from 'communist fool' Zohran Mamdani,Negative,Negative,0.7677059637227782,uncalibrated_probability
+bad33ece0b92e6f5,sentiment,embedding_lr,ny-post,23-year-old Mamdani fan-girl named youngest ever vice president of major Italian region,Neutral,Positive,0.4458159283215813,uncalibrated_probability
+dda52a48727f5539,sentiment,embedding_lr,ny-post,Mamdani taps 'Defund the Police' champion to head team steering his transition to NYC mayor,Positive,Negative,0.3748769404827687,uncalibrated_probability
+d012294485c02dc5,sentiment,embedding_lr,ny-post,Mamdani calls for Starbucks boycott as union workers strike across US,Negative,Negative,0.6851831676690638,uncalibrated_probability
+985196c99d14ba21,sentiment,embedding_lr,ny-post,"Portland's socialist disaster should be a wake-up call for Zohran  Mamdani, NYC voters",Negative,Negative,0.49200257932006414,uncalibrated_probability
+bdf833a06f469cca,sentiment,embedding_lr,ny-post,Mamdani’s win isn’t just New York’s loss — it’s a wake-up call for America,Negative,Positive,0.5612831221778524,uncalibrated_probability
+aab55c6609b19cc0,sentiment,embedding_lr,ny-post,Zohran Mamdani just made ONE wise move: nixing loser Lander's job hopes,Negative,Negative,0.4970969245677368,uncalibrated_probability
+17feb28e800747fa,sentiment,embedding_lr,ny-post,"Mamdani's people make demands: Hate Israel and America, or we will end you",Negative,Negative,0.5273725919830564,uncalibrated_probability
+d44f3ed93b3bd8b1,sentiment,embedding_lr,ny-post,NYC real estate could turn 'into Mumbai' under Mamdani if anti-owner policies reign: investor,Negative,Negative,0.5671808911647536,uncalibrated_probability
+b5886da70ca16ba5,sentiment,embedding_lr,ny-post,Mamdani's options to lead NYC schools include fire-alarm pulling Dem who wants a 'revolution',Negative,Positive,0.41677887739510694,uncalibrated_probability
+2caa39323b70e79d,sentiment,embedding_lr,ny-post,"Mamdani-backing Hochul insists she doesn't 'support' DSA, fends off relentless criticism over endorsement",Negative,Neutral,0.3592801656170255,uncalibrated_probability
+4a04942013d3e8c3,sentiment,embedding_lr,ny-post,Mayor-elect Zohran Mamdani schmoozes with NY Dem leaders who'll be key to passing his socialist 'tax the rich' plans,Neutral,Positive,0.36093351117748707,uncalibrated_probability
+458f0077eb27bf7a,sentiment,embedding_lr,ny-post,Why real estate prices will surge despite Mamdani's promises of affordability,Negative,Negative,0.49352409718941553,uncalibrated_probability
+5e1f04d5c777f825,sentiment,embedding_lr,ny-post,"Zohran Mamdani ally, NYC DSA pol threaten to root out pro-Israel 'corporate Democrats'",Neutral,Negative,0.41573283131102773,uncalibrated_probability
+5440470014c1db32,sentiment,embedding_lr,ny-post,"Mamdani's mayoral win: Letters to the Editor — Nov. 6, 2025",Neutral,Positive,0.5502527603712872,uncalibrated_probability
+82f912f6aa175db8,sentiment,embedding_lr,ny-post,Zohran Mamdani enlisted swanky celeb fashion stylist during campaign: report,Neutral,Positive,0.4600822425106062,uncalibrated_probability
+7514af41b749de14,sentiment,embedding_lr,ny-post,Mayor-elect Mamdani makes bold admission about his budget-busting socialist agenda,Positive,Positive,0.49312581068414446,uncalibrated_probability
+f3cd11020fca2a6d,sentiment,embedding_lr,ny-post,Mamdani's DSA allies are flexing power in Albany — and no corner of NY is safe,Positive,Positive,0.4919422719927,uncalibrated_probability
+443c30ff1f6770ab,sentiment,embedding_lr,ny-post,Meet the people who will have Mamdani's ear — and who he could owe favors to as mayor,Negative,Negative,0.3693807164586676,uncalibrated_probability
+bde307bb148f2233,sentiment,embedding_lr,ny-post,Andrew Cuomo offers ominous warning in first sighting since loss to Zohran Mamdani,Negative,Negative,0.4530862559458318,uncalibrated_probability
+6bda2977ceff5c00,sentiment,embedding_lr,ny-post,Zohran Mamdani stars in NRCC ads against House Dems: 'Your city could be next’,Neutral,Positive,0.396152461131143,uncalibrated_probability
+a3c45b41e599ef27,sentiment,embedding_lr,ny-post,We turned our pun-filled Mayor Mamdani cover into commemorative merch,Neutral,Negative,0.34995285480861327,uncalibrated_probability
+4a34bfd6ef03dcb5,sentiment,embedding_lr,ny-post,Zohran Mamdani taps Big Tech antagonist Lina Khan as co-chair of mayoral transition team,Neutral,Positive,0.4641489410051631,uncalibrated_probability
+91e35a3339f2906f,sentiment,embedding_lr,ny-post,Mamdani's win shows how Jewish groups failed Jews by dismissing antisemitism on the left,Neutral,Negative,0.7574449505258866,uncalibrated_probability
+8b068c8dbc40bd58,sentiment,embedding_lr,ny-post,Eric Adams unveils his plans after Zohran Mamdani wins NYC mayoral election: 'Have fun',Neutral,Positive,0.39174181744994485,uncalibrated_probability
+575660b93faeb019,sentiment,embedding_lr,ny-post,Swastikas found painted on Brooklyn yeshiva hours after Mamdani elected NYC mayor,Negative,Negative,0.5918858316117469,uncalibrated_probability
+3d0aa3be4b15f753,sentiment,embedding_lr,ny-post,CNN's Van Jones among those raising alarm at Mamdani's instant 'character switch' after winning,Negative,Neutral,0.47854924010296446,uncalibrated_probability
+90bab020f28c31a6,sentiment,embedding_lr,ny-post,Mamdani reveals he hasn't spoken with Eric Adams or Trump after winning election,Neutral,Neutral,0.5338870842496267,uncalibrated_probability
+992609f7a59dcde9,sentiment,embedding_lr,ny-post,NYC mayoral election results live map: See how Zohran Mamdani won against Andrew Cuomo,Neutral,Positive,0.6029681517888934,uncalibrated_probability
+0dd38ccbf49e284b,sentiment,embedding_lr,ny-post,Hedge fund tycoon rips Mamdani's rent freeze plan as 'hydrogen bomb' for NYC,Negative,Negative,0.7524637342342085,uncalibrated_probability
+735bd8dbf901fb92,sentiment,embedding_lr,ny-post,Greg Abbott bizarrely threatens '100% tariff' on New Yorkers fleeing to Texas if Mamdani wins,Negative,Negative,0.7216154619009877,uncalibrated_probability
+9a374ae97bc4c50b,sentiment,embedding_lr,ny-post,Mamdani wastes no time in declaring war on Trump in victory speech as prez posts '...AND SO IT BEGINS',Neutral,Positive,0.4901906807412853,uncalibrated_probability
+e761c9a248620e38,sentiment,embedding_lr,ny-post,"Mamdani poses as 'cheap seats' Knicks fan in cringefest political stunt with reporter, podcaster",Neutral,Positive,0.36309387423631095,uncalibrated_probability
+a748be5e2c8d9846,sentiment,embedding_lr,ny-post,Let's get real — a vote for Sliwa is a vote to make Mamdani mayor,Neutral,Positive,0.45839285109406736,uncalibrated_probability
+d18ae76329bc546c,sentiment,embedding_lr,ny-post,Mamdani spews word-salad excuse after Obama endorsement snub just day before election,Negative,Negative,0.45237772742596516,uncalibrated_probability
+2ce189c9a7890a01,sentiment,embedding_lr,ny-post,Antisemitic activist  vows to hold Mamdani accountable on campaign promises -- boasts Hamas-tied nonprofit fueled rise,Negative,Negative,0.4267534150887843,uncalibrated_probability
+be1acab0ca16cc5c,sentiment,embedding_lr,ny-post,"Trump scoffs at being compared to Mamdani, quips he's 'much better looking' than 'Communist' candidate",Negative,Negative,0.3861663639238515,uncalibrated_probability
+b17309b6e69cb6d4,sentiment,embedding_lr,the-new-york-times,"Trump and Mamdani Will Meet for First Time, With Implications for New York",Neutral,Neutral,0.5511654329456961,uncalibrated_probability
+88a041b7bafa9182,sentiment,embedding_lr,ca-national-news,Zohran Mamdani wins New York mayoral race,Positive,Positive,0.4187334167894353,uncalibrated_probability
+485c8f41699a0b5d,sentiment,embedding_lr,ca-national-news,New York mayoral candidates prepare for heated election as Democrat Mamdani leads polls,Positive,Neutral,0.5283059268587039,uncalibrated_probability
+7b26ab9940196126,sentiment,embedding_lr,the-seattle-times,NYC Mayor-elect hopes to meet with Trump to discuss affordability,Positive,Neutral,0.43248539125730623,uncalibrated_probability
+c4a9f2d4a7023eed,sentiment,embedding_lr,the-seattle-times,"In Israel, Mamdani’s win in New York stirs alarm over shifting US attitudes",Neutral,Positive,0.5243445033183487,uncalibrated_probability
+0a0722e41b01c249,sentiment,embedding_lr,the-seattle-times,"Zohran Mamdani and London's Muslim mayor, Sadiq Khan, have much in common, but also key differences",Neutral,Positive,0.5302916145953772,uncalibrated_probability
+e0a2330b5245a696,sentiment,embedding_lr,the-seattle-times,Divided Jewish leaders react with warnings and hope as New York elects Zohran Mamdani as mayor,Negative,Positive,0.3879992882584973,uncalibrated_probability
+94054cae0c1a4525,sentiment,embedding_lr,the-wall-street-journal,A Makeover for the Anti-Mamdani Campaign,Negative,Positive,0.3790334166124877,uncalibrated_probability
+d47d57aa17f13621,sentiment,embedding_lr,the-wall-street-journal,Mamdani Declares Victory in NYC Mayoral Primary as Cuomo Concedes,Positive,Positive,0.4628465268640871,uncalibrated_probability
+19c7e0fd8512632d,sentiment,embedding_lr,the-wall-street-journal,When Will AI Elect a President?,Positive,Neutral,0.6779992866876182,uncalibrated_probability
+fb015d5970640caf,sentiment,embedding_lr,the-wall-street-journal,NYC Developers Gripped by Hysteria After Mamdani’s Sudden Rise,Negative,Negative,0.5214805272602573,uncalibrated_probability
+bd57167677cadbfd,sentiment,embedding_lr,the-wall-street-journal,Zohran Mamdani Wins NYC Mayor’s Race,Neutral,Positive,0.567269813088676,uncalibrated_probability
+53ccfadc12ec9794,sentiment,embedding_lr,the-wall-street-journal,Affordability Key Issue for Mamdani Voter,Positive,Positive,0.47642493471408426,uncalibrated_probability
+8da4addc0cc37eaa,sentiment,embedding_lr,the-wall-street-journal,What Is Mamdani’s Millionaire Tax and How Would It Work?,Neutral,Positive,0.4321625031732773,uncalibrated_probability
+5686d258232caf18,sentiment,embedding_lr,the-wall-street-journal,Who Has Endorsed Cuomo or Mamdani for NYC mayor?,Positive,Neutral,0.4846882442861843,uncalibrated_probability
+0841ba1c525e7f5a,sentiment,embedding_lr,the-wall-street-journal,"Trump Backs Cuomo, Reiterates Funding Threat If Mamdani Wins",Negative,Negative,0.4039104094036748,uncalibrated_probability
+e4e9781752ea607b,sentiment,embedding_lr,the-wall-street-journal,Mamdani Taps Antitrust Crusader Lina Khan to Help Lead Transition,Neutral,Positive,0.42784053969302943,uncalibrated_probability
+ff30cd72ccf45f99,sentiment,embedding_lr,los-angeles-times,Mamdani’s Kampala roots resonate with Ugandans watching his mayoral bid,Positive,Positive,0.5533618384989926,uncalibrated_probability
+30cfe23e9305946b,sentiment,embedding_lr,los-angeles-times,Contributor: Electing Mamdani would be an ominous turn for New York and the nation,Negative,Positive,0.47311598866202065,uncalibrated_probability
+b97d898d02aae8c0,sentiment,embedding_lr,los-angeles-times,Contributor: Zohran Mamdani’s campaign echoes a forgotten chapter of California history,Positive,Positive,0.4843611969363613,uncalibrated_probability
+0c78c102f9e953dc,sentiment,embedding_lr,los-angeles-times,New York Gov. Kathy Hochul endorses Zohran Mamdani for mayor,Positive,Positive,0.6043809405751294,uncalibrated_probability
+a97b0150eee33090,sentiment,embedding_lr,los-angeles-times,"Trump plans to meet with Mamdani, says he’ll ‘work something out’ with New York City’s mayor-elect",Neutral,Neutral,0.4354987209503548,uncalibrated_probability
+83cd8478f1647a9d,sentiment,embedding_lr,los-angeles-times,"Letters to the Editor: No, Zohran Mamdani’s platform isn’t a fantasy of ‘far-left utopianism’",Positive,Negative,0.5520489522100533,uncalibrated_probability
+284f6af21b13877f,sentiment,embedding_lr,los-angeles-times,"Taking inspiration from Mamdani, democratic socialists look to expand their power in L.A.",Positive,Neutral,0.5843132559294573,uncalibrated_probability
+652bbf4803d76ba4,sentiment,embedding_lr,business-insider,Business leaders from Bill Ackman to Andrew Yang react to Mamdani's NYC mayoral race win,Neutral,Positive,0.7725559578110814,uncalibrated_probability
+278903d72172a2b0,sentiment,embedding_lr,business-insider,"A guide to the writers, thinkers, and politicians Mamdani referenced in his victory speech",Neutral,Negative,0.37747598936347987,uncalibrated_probability
+3834fc5119accfb2,sentiment,embedding_lr,business-insider,"The proposals NYC business leaders say they can live with under Zohran Mamdani, according to his CEO whisperer",Positive,Positive,0.47108528836531166,uncalibrated_probability
+73663a23210c567b,sentiment,embedding_lr,business-insider,Breaking down Zohran Mamdani's proposals by the numbers: What has he planned and how much will it cost,Neutral,Neutral,0.49140838167619166,uncalibrated_probability
+528601640bad3f75,sentiment,embedding_lr,the-atlantic,Mamdani Has a Point About Rent Control,Positive,Positive,0.4941314173484833,uncalibrated_probability
+ecce0d5b0447eab9,sentiment,embedding_lr,ny-post,NYC restaurateur cancels expansion plans following Zohran Mamdani victory: ‘I’m not signing’,Negative,Negative,0.6483584742504611,uncalibrated_probability
+1f5c672c67dce044,sentiment,embedding_lr,abc-news,What to know about Zohran Mamdani's wife Rama Duwaji,Neutral,Neutral,0.48788609463517235,uncalibrated_probability
+50f4e2f1e382bfaa,sentiment,embedding_lr,abc-news,"How Mamdani clinched the votes of young people, newcomers to NYC",Positive,Positive,0.7921250277200136,uncalibrated_probability
+f3e78b1a4930d831,sentiment,embedding_lr,abc-news,New York City mayoral election results: Mamdani is projected winner in historic win,Positive,Positive,0.7129892116845163,uncalibrated_probability
+f585c32f11fbdb5b,sentiment,embedding_lr,abc-news,WATCH: Trump goes after Mamdani a day after NYC mayoral election,Negative,Positive,0.5504880889987951,uncalibrated_probability
+d586a9800db2466d,sentiment,embedding_lr,new-york-magazine,Zohran Mamdani’s Young Revolution,Positive,Positive,0.44444704166451765,uncalibrated_probability
+0f73b6bc3c9516ec,sentiment,embedding_lr,nbc-news,Zohran Mamdani wins the New York mayoral race,Positive,Positive,0.5964758098710363,uncalibrated_probability
+7eb45a1e6cf10906,sentiment,embedding_lr,nbc-news,Inside Zohran Mamdani’s private influencer briefing,Positive,Positive,0.47417168069830623,uncalibrated_probability
+435a6a763fcf2dc7,sentiment,embedding_lr,nbc-news,"Zohran Mamdani decries 'racist, baseless attacks' in an emotional speech about Islamophobia in New York City",Positive,Negative,0.6309391058722524,uncalibrated_probability
+ae29cd59ddf0e703,sentiment,embedding_lr,nbc-news,Pro-Andrew Cuomo super PAC depicts Zohran Mamdani in front of Twin Towers attack in late ad,Negative,Neutral,0.3633002122440448,uncalibrated_probability
+78f9c1a06e48b787,sentiment,embedding_lr,nbc-news,Newspaper removes interview with Bill de Blasio after former NYC mayor says the quotes were 'fabricated',Neutral,Negative,0.5304361259587642,uncalibrated_probability
+bef362120aef8299,sentiment,embedding_lr,fox-news,Meet the socialist Mamdani-style mayor just elected to run West Coast's 5th largest city,Neutral,Neutral,0.4556554358325927,uncalibrated_probability
+6c45eaecac4cff99,topic,embedding_lr,ny-daily-news,Mamdani rips Mayor Adams for making Elizabeth St. Garden housing project ‘nearly impossible’,Policy,Policy,0.32375633199787307,uncalibrated_probability
+f81751898ef27364,topic,embedding_lr,ny-daily-news,NYC youth celebrate Mamdani win as first Muslim and South Asian mayor,Political Identity,Political Identity,0.4703902006639768,uncalibrated_probability
+4683ad56dc55c356,topic,embedding_lr,ny-daily-news,White House removes altered Knicks logo mocking Mamdani after team reached out: report,Social Response,Social Response,0.2972487991358925,uncalibrated_probability
+75e568785b9e4736,topic,embedding_lr,ny-daily-news,"FDNY Commissioner Robert Tucker resigns day after Mamdani mayoral win, Kaz Daughtry may go too",Social Response,Social Response,0.31665087661079483,uncalibrated_probability
+122e31b9b8c35525,topic,embedding_lr,ny-daily-news,Zohran Mamdani’s win in NYC mayor race greeted with cheers and also some fear,Social Response,Political Identity,0.23999001448189902,uncalibrated_probability
+6746ab6c9a9ad00a,topic,embedding_lr,ny-daily-news,"Readers sound off on Jews for Mamdani, genocide scholars and shutdown apathy",Opinion,Opinion,0.43038625353627286,uncalibrated_probability
+0403e1243af1ce03,topic,embedding_lr,ny-daily-news,Zohran Mamdani v. Pat Moynihan: The anti-Zionist racist and the man who fought the UN’s ‘Zionism is racism’,Political Interaction,Political Identity,0.40016321997032156,uncalibrated_probability
+95e89ce1bbaf10eb,topic,embedding_lr,ny-daily-news,"Readers sound off on Democratic leadership, accountability for Israel and Giants failures",Social Response,Opinion,0.40518388910744346,uncalibrated_probability
+173e67ddab3fd7ff,topic,embedding_lr,ny-daily-news,NYPD boss gets lucrative disability pension rank-and-file cops often have to fight for,Policy,Social Response,0.489089305162675,uncalibrated_probability
+d91870c167ac8b14,topic,embedding_lr,ny-daily-news,Maintain sanctuary in New York City,Election,Election,0.3045854992510522,uncalibrated_probability
+2aeebe8d7260cfc5,topic,embedding_lr,ny-daily-news,More housing will give us more political power,Policy,Social Response,0.3901464733180588,uncalibrated_probability
+1920241e0b5b3526,topic,embedding_lr,ny-daily-news,"Sweeping Long Island City rezoning approved, bringing 15,000 homes, waterfront development",Policy,Social Response,0.48013881420144033,uncalibrated_probability
+8ceaab89ba52926a,topic,embedding_lr,ny-daily-news,NYPD cop who shot New Jersey driver in 2024 road-rage incident pleads guilty,Policy,Social Response,0.342049235763743,uncalibrated_probability
+484e0fd44f8a7dce,topic,embedding_lr,ny-daily-news,"Hours after bitter mayoral election ends, hate-filled vandals hit Jewish cemetery, yeshiva",Social Response,Social Response,0.5231401577860687,uncalibrated_probability
+9b686edb22b261c3,topic,embedding_lr,ny-daily-news,A bitter year for independent voters,Election,Election,0.5406968556919266,uncalibrated_probability
+922b38748813e4f6,topic,embedding_lr,ny-daily-news,Question these ballot questions: Proposals 1 and 6 insult the New York State Constitution,Election,Election,0.32551400579038575,uncalibrated_probability
+1bd318c2b9989f21,topic,embedding_lr,ny-daily-news,"More than 700,000 cast ballots in early voting as NYC mayoral race on track for historic turnout",Election,Election,0.7952167193498928,uncalibrated_probability
+0c342d0abdeac077,topic,embedding_lr,ny-post,Nassau County executive challenges Hochul to draw line as DSA pressures her to back Mamdani tax hike,Opinion,Policy,0.30722479088679316,uncalibrated_probability
+3599909c21c0f662,topic,embedding_lr,ny-post,Adams meets with Netanyahu on taxpayer-funded Israel trip – rips Mayor-elect Zohran Mamdani,Political Interaction,Political Interaction,0.43057686436055964,uncalibrated_probability
+ad9da59fc6c611f4,topic,embedding_lr,ny-post,Oscar-winner tells Trump he must save New York from 'communist fool' Zohran Mamdani,Opinion,Opinion,0.3471801102794985,uncalibrated_probability
+bad33ece0b92e6f5,topic,embedding_lr,ny-post,23-year-old Mamdani fan-girl named youngest ever vice president of major Italian region,Social Response,Political Identity,0.288095071400728,uncalibrated_probability
+dda52a48727f5539,topic,embedding_lr,ny-post,Mamdani taps 'Defund the Police' champion to head team steering his transition to NYC mayor,Policy,Policy,0.3077091891296728,uncalibrated_probability
+d012294485c02dc5,topic,embedding_lr,ny-post,Mamdani calls for Starbucks boycott as union workers strike across US,Social Response,Policy,0.39126824396356,uncalibrated_probability
+985196c99d14ba21,topic,embedding_lr,ny-post,"Portland's socialist disaster should be a wake-up call for Zohran  Mamdani, NYC voters",Political Identity,Political Identity,0.2775012774775079,uncalibrated_probability
+bdf833a06f469cca,topic,embedding_lr,ny-post,Mamdani’s win isn’t just New York’s loss — it’s a wake-up call for America,Social Response,Election,0.2397935020531313,uncalibrated_probability
+aab55c6609b19cc0,topic,embedding_lr,ny-post,Zohran Mamdani just made ONE wise move: nixing loser Lander's job hopes,Opinion,Policy,0.2891914954139222,uncalibrated_probability
+17feb28e800747fa,topic,embedding_lr,ny-post,"Mamdani's people make demands: Hate Israel and America, or we will end you",Social Response,Political Identity,0.37513071224230715,uncalibrated_probability
+d44f3ed93b3bd8b1,topic,embedding_lr,ny-post,NYC real estate could turn 'into Mumbai' under Mamdani if anti-owner policies reign: investor,Opinion,Social Response,0.3569546142323605,uncalibrated_probability
+b5886da70ca16ba5,topic,embedding_lr,ny-post,Mamdani's options to lead NYC schools include fire-alarm pulling Dem who wants a 'revolution',Policy,Policy,0.28787002117523847,uncalibrated_probability
+2caa39323b70e79d,topic,embedding_lr,ny-post,"Mamdani-backing Hochul insists she doesn't 'support' DSA, fends off relentless criticism over endorsement",Political Interaction,Opinion,0.2308256668389166,uncalibrated_probability
+4a04942013d3e8c3,topic,embedding_lr,ny-post,Mayor-elect Zohran Mamdani schmoozes with NY Dem leaders who'll be key to passing his socialist 'tax the rich' plans,Political Interaction,Policy,0.28886556537782476,uncalibrated_probability
+458f0077eb27bf7a,topic,embedding_lr,ny-post,Why real estate prices will surge despite Mamdani's promises of affordability,Opinion,Social Response,0.46403990740911777,uncalibrated_probability
+5e1f04d5c777f825,topic,embedding_lr,ny-post,"Zohran Mamdani ally, NYC DSA pol threaten to root out pro-Israel 'corporate Democrats'",Social Response,Political Identity,0.24784695129368267,uncalibrated_probability
+5440470014c1db32,topic,embedding_lr,ny-post,"Mamdani's mayoral win: Letters to the Editor — Nov. 6, 2025",Election,Election,0.378643099268769,uncalibrated_probability
+82f912f6aa175db8,topic,embedding_lr,ny-post,Zohran Mamdani enlisted swanky celeb fashion stylist during campaign: report,Election,Political Identity,0.27700560249700634,uncalibrated_probability
+7514af41b749de14,topic,embedding_lr,ny-post,Mayor-elect Mamdani makes bold admission about his budget-busting socialist agenda,Policy,Policy,0.5144074481444841,uncalibrated_probability
+f3cd11020fca2a6d,topic,embedding_lr,ny-post,Mamdani's DSA allies are flexing power in Albany — and no corner of NY is safe,Social Response,Social Response,0.2557815456329324,uncalibrated_probability
+443c30ff1f6770ab,topic,embedding_lr,ny-post,Meet the people who will have Mamdani's ear — and who he could owe favors to as mayor,Social Response,Political Interaction,0.2849056299413562,uncalibrated_probability
+bde307bb148f2233,topic,embedding_lr,ny-post,Andrew Cuomo offers ominous warning in first sighting since loss to Zohran Mamdani,Social Response,Election,0.28984750494509104,uncalibrated_probability
+6bda2977ceff5c00,topic,embedding_lr,ny-post,Zohran Mamdani stars in NRCC ads against House Dems: 'Your city could be next’,Opinion,Social Response,0.29666886355386757,uncalibrated_probability
+a3c45b41e599ef27,topic,embedding_lr,ny-post,We turned our pun-filled Mayor Mamdani cover into commemorative merch,Social Response,Political Identity,0.2500877186160721,uncalibrated_probability
+4a34bfd6ef03dcb5,topic,embedding_lr,ny-post,Zohran Mamdani taps Big Tech antagonist Lina Khan as co-chair of mayoral transition team,Policy,Policy,0.3172205063493714,uncalibrated_probability
+91e35a3339f2906f,topic,embedding_lr,ny-post,Mamdani's win shows how Jewish groups failed Jews by dismissing antisemitism on the left,Opinion,Opinion,0.3573271006130521,uncalibrated_probability
+8b068c8dbc40bd58,topic,embedding_lr,ny-post,Eric Adams unveils his plans after Zohran Mamdani wins NYC mayoral election: 'Have fun',Election,Political Interaction,0.24402206582220376,uncalibrated_probability
+575660b93faeb019,topic,embedding_lr,ny-post,Swastikas found painted on Brooklyn yeshiva hours after Mamdani elected NYC mayor,Social Response,Social Response,0.36501323638298505,uncalibrated_probability
+3d0aa3be4b15f753,topic,embedding_lr,ny-post,CNN's Van Jones among those raising alarm at Mamdani's instant 'character switch' after winning,Opinion,Opinion,0.29230719288203016,uncalibrated_probability
+90bab020f28c31a6,topic,embedding_lr,ny-post,Mamdani reveals he hasn't spoken with Eric Adams or Trump after winning election,Political Interaction,Political Interaction,0.49330422164022425,uncalibrated_probability
+992609f7a59dcde9,topic,embedding_lr,ny-post,NYC mayoral election results live map: See how Zohran Mamdani won against Andrew Cuomo,Election,Election,0.6566651031333598,uncalibrated_probability
+0dd38ccbf49e284b,topic,embedding_lr,ny-post,Hedge fund tycoon rips Mamdani's rent freeze plan as 'hydrogen bomb' for NYC,Opinion,Policy,0.3395767967550223,uncalibrated_probability
+735bd8dbf901fb92,topic,embedding_lr,ny-post,Greg Abbott bizarrely threatens '100% tariff' on New Yorkers fleeing to Texas if Mamdani wins,Social Response,Social Response,0.3368887045139131,uncalibrated_probability
+9a374ae97bc4c50b,topic,embedding_lr,ny-post,Mamdani wastes no time in declaring war on Trump in victory speech as prez posts '...AND SO IT BEGINS',Social Response,Political Identity,0.24249492244766777,uncalibrated_probability
+e761c9a248620e38,topic,embedding_lr,ny-post,"Mamdani poses as 'cheap seats' Knicks fan in cringefest political stunt with reporter, podcaster",Opinion,Opinion,0.3166946610010214,uncalibrated_probability
+a748be5e2c8d9846,topic,embedding_lr,ny-post,Let's get real — a vote for Sliwa is a vote to make Mamdani mayor,Opinion,Election,0.4438998583947152,uncalibrated_probability
+d18ae76329bc546c,topic,embedding_lr,ny-post,Mamdani spews word-salad excuse after Obama endorsement snub just day before election,Political Interaction,Opinion,0.2529148304986782,uncalibrated_probability
+2ce189c9a7890a01,topic,embedding_lr,ny-post,Antisemitic activist  vows to hold Mamdani accountable on campaign promises -- boasts Hamas-tied nonprofit fueled rise,Political Identity,Political Identity,0.36970929025299265,uncalibrated_probability
+be1acab0ca16cc5c,topic,embedding_lr,ny-post,"Trump scoffs at being compared to Mamdani, quips he's 'much better looking' than 'Communist' candidate",Opinion,Opinion,0.4160357883417716,uncalibrated_probability
+b17309b6e69cb6d4,topic,embedding_lr,the-new-york-times,"Trump and Mamdani Will Meet for First Time, With Implications for New York",Political Interaction,Political Interaction,0.6257066059989679,uncalibrated_probability
+88a041b7bafa9182,topic,embedding_lr,ca-national-news,Zohran Mamdani wins New York mayoral race,Election,Election,0.4236813864217619,uncalibrated_probability
+485c8f41699a0b5d,topic,embedding_lr,ca-national-news,New York mayoral candidates prepare for heated election as Democrat Mamdani leads polls,Election,Election,0.6013166101416317,uncalibrated_probability
+7b26ab9940196126,topic,embedding_lr,the-seattle-times,NYC Mayor-elect hopes to meet with Trump to discuss affordability,Policy,Political Interaction,0.400565517233443,uncalibrated_probability
+c4a9f2d4a7023eed,topic,embedding_lr,the-seattle-times,"In Israel, Mamdani’s win in New York stirs alarm over shifting US attitudes",Social Response,Political Identity,0.24679915587890014,uncalibrated_probability
+0a0722e41b01c249,topic,embedding_lr,the-seattle-times,"Zohran Mamdani and London's Muslim mayor, Sadiq Khan, have much in common, but also key differences",Political Identity,Political Identity,0.524303955549874,uncalibrated_probability
+e0a2330b5245a696,topic,embedding_lr,the-seattle-times,Divided Jewish leaders react with warnings and hope as New York elects Zohran Mamdani as mayor,Social Response,Political Identity,0.4499257988379345,uncalibrated_probability
+94054cae0c1a4525,topic,embedding_lr,the-wall-street-journal,A Makeover for the Anti-Mamdani Campaign,Social Response,Opinion,0.2684455033459162,uncalibrated_probability
+d47d57aa17f13621,topic,embedding_lr,the-wall-street-journal,Mamdani Declares Victory in NYC Mayoral Primary as Cuomo Concedes,Election,Election,0.5864262926005908,uncalibrated_probability
+19c7e0fd8512632d,topic,embedding_lr,the-wall-street-journal,When Will AI Elect a President?,Election,Election,0.3422854184574196,uncalibrated_probability
+fb015d5970640caf,topic,embedding_lr,the-wall-street-journal,NYC Developers Gripped by Hysteria After Mamdani’s Sudden Rise,Social Response,Social Response,0.35959171082114927,uncalibrated_probability
+bd57167677cadbfd,topic,embedding_lr,the-wall-street-journal,Zohran Mamdani Wins NYC Mayor’s Race,Election,Election,0.38230100455228566,uncalibrated_probability
+53ccfadc12ec9794,topic,embedding_lr,the-wall-street-journal,Affordability Key Issue for Mamdani Voter,Policy,Policy,0.40010545893697846,uncalibrated_probability
+8da4addc0cc37eaa,topic,embedding_lr,the-wall-street-journal,What Is Mamdani’s Millionaire Tax and How Would It Work?,Policy,Policy,0.46921021997646983,uncalibrated_probability
+5686d258232caf18,topic,embedding_lr,the-wall-street-journal,Who Has Endorsed Cuomo or Mamdani for NYC mayor?,Opinion,Election,0.42141478466961185,uncalibrated_probability
+0841ba1c525e7f5a,topic,embedding_lr,the-wall-street-journal,"Trump Backs Cuomo, Reiterates Funding Threat If Mamdani Wins",Opinion,Political Interaction,0.2971108111895611,uncalibrated_probability
+e4e9781752ea607b,topic,embedding_lr,the-wall-street-journal,Mamdani Taps Antitrust Crusader Lina Khan to Help Lead Transition,Policy,Policy,0.35613357671431267,uncalibrated_probability
+ff30cd72ccf45f99,topic,embedding_lr,los-angeles-times,Mamdani’s Kampala roots resonate with Ugandans watching his mayoral bid,Political Identity,Political Identity,0.2337018616893979,uncalibrated_probability
+30cfe23e9305946b,topic,embedding_lr,los-angeles-times,Contributor: Electing Mamdani would be an ominous turn for New York and the nation,Opinion,Social Response,0.23598207648835248,uncalibrated_probability
+b97d898d02aae8c0,topic,embedding_lr,los-angeles-times,Contributor: Zohran Mamdani’s campaign echoes a forgotten chapter of California history,Election,Opinion,0.2798323382849794,uncalibrated_probability
+0c78c102f9e953dc,topic,embedding_lr,los-angeles-times,New York Gov. Kathy Hochul endorses Zohran Mamdani for mayor,Opinion,Political Identity,0.22852471963194768,uncalibrated_probability
+a97b0150eee33090,topic,embedding_lr,los-angeles-times,"Trump plans to meet with Mamdani, says he’ll ‘work something out’ with New York City’s mayor-elect",Political Interaction,Political Interaction,0.5953348163709953,uncalibrated_probability
+83cd8478f1647a9d,topic,embedding_lr,los-angeles-times,"Letters to the Editor: No, Zohran Mamdani’s platform isn’t a fantasy of ‘far-left utopianism’",Opinion,Policy,0.3637603304170614,uncalibrated_probability
+284f6af21b13877f,topic,embedding_lr,los-angeles-times,"Taking inspiration from Mamdani, democratic socialists look to expand their power in L.A.",Social Response,Election,0.3157561733298212,uncalibrated_probability
+652bbf4803d76ba4,topic,embedding_lr,business-insider,Business leaders from Bill Ackman to Andrew Yang react to Mamdani's NYC mayoral race win,Opinion,Political Identity,0.24011975702352914,uncalibrated_probability
+278903d72172a2b0,topic,embedding_lr,business-insider,"A guide to the writers, thinkers, and politicians Mamdani referenced in his victory speech",Political Identity,Opinion,0.339621551154847,uncalibrated_probability
+3834fc5119accfb2,topic,embedding_lr,business-insider,"The proposals NYC business leaders say they can live with under Zohran Mamdani, according to his CEO whisperer",Opinion,Policy,0.41420054092631425,uncalibrated_probability
+73663a23210c567b,topic,embedding_lr,business-insider,Breaking down Zohran Mamdani's proposals by the numbers: What has he planned and how much will it cost,Policy,Policy,0.25621579097746117,uncalibrated_probability
+528601640bad3f75,topic,embedding_lr,the-atlantic,Mamdani Has a Point About Rent Control,Policy,Policy,0.47417044801446406,uncalibrated_probability
+ecce0d5b0447eab9,topic,embedding_lr,ny-post,NYC restaurateur cancels expansion plans following Zohran Mamdani victory: ‘I’m not signing’,Opinion,Social Response,0.37016593266321357,uncalibrated_probability
+1f5c672c67dce044,topic,embedding_lr,abc-news,What to know about Zohran Mamdani's wife Rama Duwaji,Political Identity,Political Interaction,0.21086457080470786,uncalibrated_probability
+50f4e2f1e382bfaa,topic,embedding_lr,abc-news,"How Mamdani clinched the votes of young people, newcomers to NYC",Election,Election,0.49695694417217423,uncalibrated_probability
+f3e78b1a4930d831,topic,embedding_lr,abc-news,New York City mayoral election results: Mamdani is projected winner in historic win,Election,Election,0.6283547072630388,uncalibrated_probability
+f585c32f11fbdb5b,topic,embedding_lr,abc-news,WATCH: Trump goes after Mamdani a day after NYC mayoral election,Opinion,Political Interaction,0.22240276928380245,uncalibrated_probability
+d586a9800db2466d,topic,embedding_lr,new-york-magazine,Zohran Mamdani’s Young Revolution,Election,Political Identity,0.334472577755585,uncalibrated_probability
+0f73b6bc3c9516ec,topic,embedding_lr,nbc-news,Zohran Mamdani wins the New York mayoral race,Election,Election,0.3687210530260894,uncalibrated_probability
+7eb45a1e6cf10906,topic,embedding_lr,nbc-news,Inside Zohran Mamdani’s private influencer briefing,Election,Opinion,0.2650103209383511,uncalibrated_probability
+435a6a763fcf2dc7,topic,embedding_lr,nbc-news,"Zohran Mamdani decries 'racist, baseless attacks' in an emotional speech about Islamophobia in New York City",Political Identity,Political Identity,0.46482583171987896,uncalibrated_probability
+ae29cd59ddf0e703,topic,embedding_lr,nbc-news,Pro-Andrew Cuomo super PAC depicts Zohran Mamdani in front of Twin Towers attack in late ad,Opinion,Political Interaction,0.2896454524022777,uncalibrated_probability
+78f9c1a06e48b787,topic,embedding_lr,nbc-news,Newspaper removes interview with Bill de Blasio after former NYC mayor says the quotes were 'fabricated',Social Response,Opinion,0.21760096007111882,uncalibrated_probability
+bef362120aef8299,topic,embedding_lr,fox-news,Meet the socialist Mamdani-style mayor just elected to run West Coast's 5th largest city,Political Identity,Election,0.2946440232358732,uncalibrated_probability

@@ -1,0 +1,1335 @@
+{
+  "complete": true,
+  "dataset_sha256": "bd635666e434a67b135c51af8cf0bab20139bf9fc984f40415055bcae2c18579",
+  "rows": 484,
+  "development_rows": 387,
+  "test_rows": 97,
+  "seed": 42,
+  "created_at": "2026-10-12T08:19:29.749792+00:00",
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "torch": "2.14.1+cpu",
+    "setfit": "1.2.0",
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.19.0"
+  },
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "setfit_steps": 30,
+  "headline_group_threshold": 0.88,
+  "headline_groups": 480,
+  "sentiment_definition": "Portrayal of Mamdani: favorable / neutral / unfavorable",
+  "selection_rule": "Highest pooled macro-F1 on three development folds; final test not used for selection.",
+  "tasks": {
+    "sentiment": {
+      "class_counts": {
+        "Neutral": 191,
+        "Negative": 166,
+        "Positive": 127
+      },
+      "candidates": {
+        "majority": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.3953488372093023,
+            "macro_f1": 0.18888888888888888,
+            "per_class": {
+              "Negative": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 133.0
+              },
+              "Neutral": {
+                "precision": 0.3953488372093023,
+                "recall": 1.0,
+                "f1-score": 0.5666666666666667,
+                "support": 153.0
+              },
+              "Positive": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 101.0
+              },
+              "accuracy": 0.3953488372093023,
+              "macro avg": {
+                "precision": 0.1317829457364341,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.18888888888888888,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.15630070308274743,
+                "recall": 0.3953488372093023,
+                "f1-score": 0.224031007751938,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                133,
+                0
+              ],
+              [
+                0,
+                153,
+                0
+              ],
+              [
+                0,
+                101,
+                0
+              ]
+            ],
+            "labels": [
+              "Negative",
+              "Neutral",
+              "Positive"
+            ]
+          },
+          "fold_macro_f1": [
+            0.18888888888888888,
+            0.18888888888888888,
+            0.18888888888888888
+          ]
+        },
+        "tfidf_word_lr": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.5012919896640827,
+            "macro_f1": 0.4982175232201913,
+            "per_class": {
+              "Negative": {
+                "precision": 0.5403225806451613,
+                "recall": 0.5037593984962406,
+                "f1-score": 0.5214007782101168,
+                "support": 133.0
+              },
+              "Neutral": {
+                "precision": 0.5165562913907285,
+                "recall": 0.5098039215686274,
+                "f1-score": 0.5131578947368421,
+                "support": 153.0
+              },
+              "Positive": {
+                "precision": 0.4375,
+                "recall": 0.48514851485148514,
+                "f1-score": 0.460093896713615,
+                "support": 101.0
+              },
+              "accuracy": 0.5012919896640827,
+              "macro avg": {
+                "precision": 0.4981262906786299,
+                "recall": 0.49957061163878436,
+                "f1-score": 0.4982175232201913,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.5040917721152142,
+                "recall": 0.5012919896640827,
+                "f1-score": 0.5021419766531201,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                67,
+                42,
+                24
+              ],
+              [
+                36,
+                78,
+                39
+              ],
+              [
+                21,
+                31,
+                49
+              ]
+            ],
+            "labels": [
+              "Negative",
+              "Neutral",
+              "Positive"
+            ]
+          },
+          "fold_macro_f1": [
+            0.49153025222974606,
+            0.5024540226735145,
+            0.5003237213008617
+          ]
+        },
+        "tfidf_char_svm": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.5193798449612403,
+            "macro_f1": 0.5060527728338561,
+            "per_class": {
+              "Negative": {
+                "precision": 0.5789473684210527,
+                "recall": 0.5789473684210527,
+                "f1-score": 0.5789473684210527,
+                "support": 133.0
+              },
+              "Neutral": {
+                "precision": 0.5087719298245614,
+                "recall": 0.5686274509803921,
+                "f1-score": 0.5370370370370371,
+                "support": 153.0
+              },
+              "Positive": {
+                "precision": 0.4457831325301205,
+                "recall": 0.36633663366336633,
+                "f1-score": 0.40217391304347827,
+                "support": 101.0
+              },
+              "accuracy": 0.5193798449612403,
+              "macro avg": {
+                "precision": 0.5111674769252449,
+                "recall": 0.5046371510216038,
+                "f1-score": 0.5060527728338561,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.5164501334591733,
+                "recall": 0.5193798449612403,
+                "f1-score": 0.5162434932404599,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                77,
+                42,
+                14
+              ],
+              [
+                34,
+                87,
+                32
+              ],
+              [
+                22,
+                42,
+                37
+              ]
+            ],
+            "labels": [
+              "Negative",
+              "Neutral",
+              "Positive"
+            ]
+          },
+          "fold_macro_f1": [
+            0.5105339105339105,
+            0.4684654488576057,
+            0.5398947334431206
+          ]
+        },
+        "embedding_lr": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.5555555555555556,
+            "macro_f1": 0.5540356301294128,
+            "per_class": {
+              "Negative": {
+                "precision": 0.60431654676259,
+                "recall": 0.631578947368421,
+                "f1-score": 0.6176470588235294,
+                "support": 133.0
+              },
+              "Neutral": {
+                "precision": 0.5703125,
+                "recall": 0.477124183006536,
+                "f1-score": 0.5195729537366548,
+                "support": 153.0
+              },
+              "Positive": {
+                "precision": 0.48333333333333334,
+                "recall": 0.5742574257425742,
+                "f1-score": 0.5248868778280543,
+                "support": 101.0
+              },
+              "accuracy": 0.5555555555555556,
+              "macro avg": {
+                "precision": 0.5526541266986411,
+                "recall": 0.5609868520391771,
+                "f1-score": 0.5540356301294128,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.5592986560364112,
+                "recall": 0.5555555555555556,
+                "f1-score": 0.5546648460100028,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                84,
+                29,
+                20
+              ],
+              [
+                38,
+                73,
+                42
+              ],
+              [
+                17,
+                26,
+                58
+              ]
+            ],
+            "labels": [
+              "Negative",
+              "Neutral",
+              "Positive"
+            ]
+          },
+          "fold_macro_f1": [
+            0.5960086299892126,
+            0.4802390591864276,
+            0.579911895392453
+          ]
+        },
+        "setfit": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.5426356589147286,
+            "macro_f1": 0.5401459854014599,
+            "per_class": {
+              "Negative": {
+                "precision": 0.6028368794326241,
+                "recall": 0.6390977443609023,
+                "f1-score": 0.6204379562043796,
+                "support": 133.0
+              },
+              "Neutral": {
+                "precision": 0.5609756097560976,
+                "recall": 0.45098039215686275,
+                "f1-score": 0.5,
+                "support": 153.0
+              },
+              "Positive": {
+                "precision": 0.45528455284552843,
+                "recall": 0.5544554455445545,
+                "f1-score": 0.5,
+                "support": 101.0
+              },
+              "accuracy": 0.5426356589147286,
+              "macro avg": {
+                "precision": 0.5396990140114167,
+                "recall": 0.5481778606874398,
+                "f1-score": 0.5401459854014599,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.5477785868078044,
+                "recall": 0.5426356589147286,
+                "f1-score": 0.5413908221580942,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                85,
+                25,
+                23
+              ],
+              [
+                40,
+                69,
+                44
+              ],
+              [
+                16,
+                29,
+                56
+              ]
+            ],
+            "labels": [
+              "Negative",
+              "Neutral",
+              "Positive"
+            ]
+          },
+          "fold_macro_f1": [
+            0.6027450571144071,
+            0.45439380740118995,
+            0.556433412150506
+          ]
+        }
+      },
+      "selected_model": "embedding_lr",
+      "held_out_test": {
+        "accuracy": 0.4845360824742268,
+        "macro_f1": 0.4792703150912106,
+        "per_class": {
+          "Negative": {
+            "precision": 0.6176470588235294,
+            "recall": 0.6363636363636364,
+            "f1-score": 0.6268656716417911,
+            "support": 33.0
+          },
+          "Neutral": {
+            "precision": 0.45454545454545453,
+            "recall": 0.2631578947368421,
+            "f1-score": 0.3333333333333333,
+            "support": 38.0
+          },
+          "Positive": {
+            "precision": 0.3902439024390244,
+            "recall": 0.6153846153846154,
+            "f1-score": 0.47761194029850745,
+            "support": 26.0
+          },
+          "accuracy": 0.4845360824742268,
+          "macro avg": {
+            "precision": 0.4874788052693361,
+            "recall": 0.5049687154950313,
+            "f1-score": 0.4792703150912106,
+            "support": 97.0
+          },
+          "weighted avg": {
+            "precision": 0.492798161621839,
+            "recall": 0.4845360824742268,
+            "f1-score": 0.47186746678976255,
+            "support": 97.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            21,
+            6,
+            6
+          ],
+          [
+            9,
+            10,
+            19
+          ],
+          [
+            4,
+            6,
+            16
+          ]
+        ],
+        "labels": [
+          "Negative",
+          "Neutral",
+          "Positive"
+        ]
+      },
+      "held_out_majority": {
+        "accuracy": 0.3917525773195876,
+        "macro_f1": 0.18765432098765433,
+        "per_class": {
+          "Negative": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 33.0
+          },
+          "Neutral": {
+            "precision": 0.3917525773195876,
+            "recall": 1.0,
+            "f1-score": 0.562962962962963,
+            "support": 38.0
+          },
+          "Positive": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 26.0
+          },
+          "accuracy": 0.3917525773195876,
+          "macro avg": {
+            "precision": 0.13058419243986255,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.18765432098765433,
+            "support": 97.0
+          },
+          "weighted avg": {
+            "precision": 0.15347008183653948,
+            "recall": 0.3917525773195876,
+            "f1-score": 0.22054219167621228,
+            "support": 97.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            33,
+            0
+          ],
+          [
+            0,
+            38,
+            0
+          ],
+          [
+            0,
+            26,
+            0
+          ]
+        ],
+        "labels": [
+          "Negative",
+          "Neutral",
+          "Positive"
+        ]
+      }
+    },
+    "topic": {
+      "class_counts": {
+        "Election": 102,
+        "Policy": 97,
+        "Social Response": 96,
+        "Opinion": 84,
+        "Political Identity": 54,
+        "Political Interaction": 51
+      },
+      "candidates": {
+        "majority": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.2144702842377261,
+            "macro_f1": 0.058865248226950356,
+            "per_class": {
+              "Election": {
+                "precision": 0.2144702842377261,
+                "recall": 1.0,
+                "f1-score": 0.35319148936170214,
+                "support": 83.0
+              },
+              "Opinion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 61.0
+              },
+              "Policy": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 82.0
+              },
+              "Political Identity": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 45.0
+              },
+              "Political Interaction": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 43.0
+              },
+              "Social Response": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 73.0
+              },
+              "accuracy": 0.2144702842377261,
+              "macro avg": {
+                "precision": 0.03574504737295435,
+                "recall": 0.16666666666666666,
+                "f1-score": 0.058865248226950356,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.04599750282101102,
+                "recall": 0.2144702842377261,
+                "f1-score": 0.07574907911375006,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                83,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                61,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                82,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                45,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                43,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                73,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "labels": [
+              "Election",
+              "Opinion",
+              "Policy",
+              "Political Identity",
+              "Political Interaction",
+              "Social Response"
+            ]
+          },
+          "fold_macro_f1": [
+            0.05907172995780591,
+            0.05769230769230769,
+            0.05982905982905983
+          ]
+        },
+        "tfidf_word_lr": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.43410852713178294,
+            "macro_f1": 0.41092103674784086,
+            "per_class": {
+              "Election": {
+                "precision": 0.5625,
+                "recall": 0.6506024096385542,
+                "f1-score": 0.6033519553072626,
+                "support": 83.0
+              },
+              "Opinion": {
+                "precision": 0.3023255813953488,
+                "recall": 0.21311475409836064,
+                "f1-score": 0.25,
+                "support": 61.0
+              },
+              "Policy": {
+                "precision": 0.48,
+                "recall": 0.43902439024390244,
+                "f1-score": 0.4585987261146497,
+                "support": 82.0
+              },
+              "Political Identity": {
+                "precision": 0.3409090909090909,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.33707865168539325,
+                "support": 45.0
+              },
+              "Political Interaction": {
+                "precision": 0.38,
+                "recall": 0.4418604651162791,
+                "f1-score": 0.40860215053763443,
+                "support": 43.0
+              },
+              "Social Response": {
+                "precision": 0.3924050632911392,
+                "recall": 0.4246575342465753,
+                "f1-score": 0.40789473684210525,
+                "support": 73.0
+              },
+              "accuracy": 0.43410852713178294,
+              "macro avg": {
+                "precision": 0.40968995593259644,
+                "recall": 0.41709881444616753,
+                "f1-score": 0.41092103674784086,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.42588072138573263,
+                "recall": 0.43410852713178294,
+                "f1-score": 0.4275143550913146,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                54,
+                5,
+                7,
+                6,
+                3,
+                8
+              ],
+              [
+                13,
+                13,
+                8,
+                8,
+                7,
+                12
+              ],
+              [
+                5,
+                7,
+                36,
+                7,
+                10,
+                17
+              ],
+              [
+                8,
+                6,
+                6,
+                15,
+                4,
+                6
+              ],
+              [
+                6,
+                4,
+                8,
+                1,
+                19,
+                5
+              ],
+              [
+                10,
+                8,
+                10,
+                7,
+                7,
+                31
+              ]
+            ],
+            "labels": [
+              "Election",
+              "Opinion",
+              "Policy",
+              "Political Identity",
+              "Political Interaction",
+              "Social Response"
+            ]
+          },
+          "fold_macro_f1": [
+            0.38653681231592657,
+            0.37962016601925225,
+            0.4647500106081259
+          ]
+        },
+        "tfidf_char_svm": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.46511627906976744,
+            "macro_f1": 0.4534623606605274,
+            "per_class": {
+              "Election": {
+                "precision": 0.5436893203883495,
+                "recall": 0.6746987951807228,
+                "f1-score": 0.6021505376344086,
+                "support": 83.0
+              },
+              "Opinion": {
+                "precision": 0.40476190476190477,
+                "recall": 0.2786885245901639,
+                "f1-score": 0.3300970873786408,
+                "support": 61.0
+              },
+              "Policy": {
+                "precision": 0.5,
+                "recall": 0.47560975609756095,
+                "f1-score": 0.4875,
+                "support": 82.0
+              },
+              "Political Identity": {
+                "precision": 0.4,
+                "recall": 0.4444444444444444,
+                "f1-score": 0.42105263157894735,
+                "support": 45.0
+              },
+              "Political Interaction": {
+                "precision": 0.5365853658536586,
+                "recall": 0.5116279069767442,
+                "f1-score": 0.5238095238095238,
+                "support": 43.0
+              },
+              "Social Response": {
+                "precision": 0.3561643835616438,
+                "recall": 0.3561643835616438,
+                "f1-score": 0.3561643835616438,
+                "support": 73.0
+              },
+              "accuracy": 0.46511627906976744,
+              "macro avg": {
+                "precision": 0.45686682909425946,
+                "recall": 0.4568723018085467,
+                "f1-score": 0.4534623606605274,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.4596637222594742,
+                "recall": 0.46511627906976744,
+                "f1-score": 0.4588129067147678,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                56,
+                4,
+                5,
+                3,
+                5,
+                10
+              ],
+              [
+                14,
+                17,
+                5,
+                9,
+                2,
+                14
+              ],
+              [
+                6,
+                10,
+                39,
+                7,
+                7,
+                13
+              ],
+              [
+                6,
+                4,
+                7,
+                20,
+                2,
+                6
+              ],
+              [
+                6,
+                2,
+                6,
+                3,
+                22,
+                4
+              ],
+              [
+                15,
+                5,
+                16,
+                8,
+                3,
+                26
+              ]
+            ],
+            "labels": [
+              "Election",
+              "Opinion",
+              "Policy",
+              "Political Identity",
+              "Political Interaction",
+              "Social Response"
+            ]
+          },
+          "fold_macro_f1": [
+            0.45665940005655387,
+            0.412913634421171,
+            0.48786918276082364
+          ]
+        },
+        "embedding_lr": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.5116279069767442,
+            "macro_f1": 0.4932598955566658,
+            "per_class": {
+              "Election": {
+                "precision": 0.6195652173913043,
+                "recall": 0.6867469879518072,
+                "f1-score": 0.6514285714285715,
+                "support": 83.0
+              },
+              "Opinion": {
+                "precision": 0.38095238095238093,
+                "recall": 0.26229508196721313,
+                "f1-score": 0.3106796116504854,
+                "support": 61.0
+              },
+              "Policy": {
+                "precision": 0.625,
+                "recall": 0.5487804878048781,
+                "f1-score": 0.5844155844155844,
+                "support": 82.0
+              },
+              "Political Identity": {
+                "precision": 0.3333333333333333,
+                "recall": 0.5111111111111111,
+                "f1-score": 0.40350877192982454,
+                "support": 45.0
+              },
+              "Political Interaction": {
+                "precision": 0.49019607843137253,
+                "recall": 0.5813953488372093,
+                "f1-score": 0.5319148936170213,
+                "support": 43.0
+              },
+              "Social Response": {
+                "precision": 0.5245901639344263,
+                "recall": 0.4383561643835616,
+                "f1-score": 0.47761194029850745,
+                "support": 73.0
+              },
+              "accuracy": 0.5116279069767442,
+              "macro avg": {
+                "precision": 0.4956061956738029,
+                "recall": 0.5047808636759634,
+                "f1-score": 0.4932598955566658,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.5175336476003505,
+                "recall": 0.5116279069767442,
+                "f1-score": 0.5086253552079949,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                57,
+                4,
+                6,
+                6,
+                6,
+                4
+              ],
+              [
+                10,
+                16,
+                4,
+                17,
+                4,
+                10
+              ],
+              [
+                5,
+                5,
+                45,
+                8,
+                8,
+                11
+              ],
+              [
+                6,
+                8,
+                4,
+                23,
+                4,
+                0
+              ],
+              [
+                4,
+                3,
+                4,
+                3,
+                25,
+                4
+              ],
+              [
+                10,
+                6,
+                9,
+                12,
+                4,
+                32
+              ]
+            ],
+            "labels": [
+              "Election",
+              "Opinion",
+              "Policy",
+              "Political Identity",
+              "Political Interaction",
+              "Social Response"
+            ]
+          },
+          "fold_macro_f1": [
+            0.4362772707649368,
+            0.45860675722744687,
+            0.5802054615361467
+          ]
+        },
+        "setfit": {
+          "status": "evaluated",
+          "development": {
+            "accuracy": 0.5090439276485789,
+            "macro_f1": 0.4908341518187022,
+            "per_class": {
+              "Election": {
+                "precision": 0.6276595744680851,
+                "recall": 0.7108433734939759,
+                "f1-score": 0.6666666666666666,
+                "support": 83.0
+              },
+              "Opinion": {
+                "precision": 0.4186046511627907,
+                "recall": 0.29508196721311475,
+                "f1-score": 0.34615384615384615,
+                "support": 61.0
+              },
+              "Policy": {
+                "precision": 0.5866666666666667,
+                "recall": 0.5365853658536586,
+                "f1-score": 0.5605095541401274,
+                "support": 82.0
+              },
+              "Political Identity": {
+                "precision": 0.34375,
+                "recall": 0.4888888888888889,
+                "f1-score": 0.4036697247706422,
+                "support": 45.0
+              },
+              "Political Interaction": {
+                "precision": 0.49019607843137253,
+                "recall": 0.5813953488372093,
+                "f1-score": 0.5319148936170213,
+                "support": 43.0
+              },
+              "Social Response": {
+                "precision": 0.48333333333333334,
+                "recall": 0.3972602739726027,
+                "f1-score": 0.43609022556390975,
+                "support": 73.0
+              },
+              "accuracy": 0.5090439276485789,
+              "macro avg": {
+                "precision": 0.4917017173437081,
+                "recall": 0.5016758697099083,
+                "f1-score": 0.4908341518187022,
+                "support": 387.0
+              },
+              "weighted avg": {
+                "precision": 0.5105111363677786,
+                "recall": 0.5090439276485789,
+                "f1-score": 0.5046061134226992,
+                "support": 387.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                59,
+                4,
+                5,
+                6,
+                4,
+                5
+              ],
+              [
+                11,
+                18,
+                4,
+                16,
+                4,
+                8
+              ],
+              [
+                4,
+                4,
+                44,
+                7,
+                10,
+                13
+              ],
+              [
+                7,
+                7,
+                4,
+                22,
+                4,
+                1
+              ],
+              [
+                3,
+                4,
+                5,
+                2,
+                25,
+                4
+              ],
+              [
+                10,
+                6,
+                13,
+                11,
+                4,
+                29
+              ]
+            ],
+            "labels": [
+              "Election",
+              "Opinion",
+              "Policy",
+              "Political Identity",
+              "Political Interaction",
+              "Social Response"
+            ]
+          },
+          "fold_macro_f1": [
+            0.42685223975546555,
+            0.46218885012453786,
+            0.5788659472869999
+          ]
+        }
+      },
+      "selected_model": "embedding_lr",
+      "held_out_test": {
+        "accuracy": 0.4845360824742268,
+        "macro_f1": 0.4793119102329628,
+        "per_class": {
+          "Election": {
+            "precision": 0.7,
+            "recall": 0.7368421052631579,
+            "f1-score": 0.717948717948718,
+            "support": 19.0
+          },
+          "Opinion": {
+            "precision": 0.42857142857142855,
+            "recall": 0.2608695652173913,
+            "f1-score": 0.32432432432432434,
+            "support": 23.0
+          },
+          "Policy": {
+            "precision": 0.5882352941176471,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.625,
+            "support": 15.0
+          },
+          "Political Identity": {
+            "precision": 0.3157894736842105,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.42857142857142855,
+            "support": 9.0
+          },
+          "Political Interaction": {
+            "precision": 0.36363636363636365,
+            "recall": 0.5,
+            "f1-score": 0.42105263157894735,
+            "support": 8.0
+          },
+          "Social Response": {
+            "precision": 0.4375,
+            "recall": 0.30434782608695654,
+            "f1-score": 0.358974358974359,
+            "support": 23.0
+          },
+          "accuracy": 0.4845360824742268,
+          "macro avg": {
+            "precision": 0.47228876000160835,
+            "recall": 0.5225654716501398,
+            "f1-score": 0.4793119102329628,
+            "support": 97.0
+          },
+          "weighted avg": {
+            "precision": 0.49272544784697286,
+            "recall": 0.4845360824742268,
+            "f1-score": 0.4737882398625752,
+            "support": 97.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            14,
+            2,
+            0,
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            6,
+            5,
+            2,
+            3,
+            5
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            1,
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            1,
+            4,
+            0
+          ],
+          [
+            3,
+            3,
+            1,
+            8,
+            1,
+            7
+          ]
+        ],
+        "labels": [
+          "Election",
+          "Opinion",
+          "Policy",
+          "Political Identity",
+          "Political Interaction",
+          "Social Response"
+        ]
+      },
+      "held_out_majority": {
+        "accuracy": 0.1958762886597938,
+        "macro_f1": 0.05459770114942528,
+        "per_class": {
+          "Election": {
+            "precision": 0.1958762886597938,
+            "recall": 1.0,
+            "f1-score": 0.3275862068965517,
+            "support": 19.0
+          },
+          "Opinion": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 23.0
+          },
+          "Policy": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 15.0
+          },
+          "Political Identity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 9.0
+          },
+          "Political Interaction": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "Social Response": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 23.0
+          },
+          "accuracy": 0.1958762886597938,
+          "macro avg": {
+            "precision": 0.03264604810996564,
+            "recall": 0.16666666666666666,
+            "f1-score": 0.05459770114942528,
+            "support": 97.0
+          },
+          "weighted avg": {
+            "precision": 0.03836752045913487,
+            "recall": 0.1958762886597938,
+            "f1-score": 0.0641663704230359,
+            "support": 97.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            23,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            23,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "Election",
+          "Opinion",
+          "Policy",
+          "Political Identity",
+          "Political Interaction",
+          "Social Response"
+        ]
+      }
+    }
+  },
+  "base_model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "automation_ready": false
+}
