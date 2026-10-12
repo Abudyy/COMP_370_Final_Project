@@ -20,7 +20,7 @@ MODEL_NAMES = ["majority", "tfidf_word_lr", "tfidf_char_svm", "embedding_lr", "s
 def frozen_encoder(model_name):
     from sentence_transformers import SentenceTransformer
     import torch
-    torch.set_num_threads(min(4, os.cpu_count() or 1))
+    torch.set_num_threads(min(int(os.getenv("MEDIA_LENS_CPU_THREADS", "4")), os.cpu_count() or 1))
     return SentenceTransformer(model_name, device="cpu", revision=BASE_REVISION if model_name == BASE_MODEL else None)
 
 
@@ -47,28 +47,30 @@ class EmbeddingClassifier(ClassifierMixin, BaseEstimator):
 
 
 class SetFitClassifier(ClassifierMixin, BaseEstimator):
-    def __init__(self, model_name=BASE_MODEL, seed=42, max_steps=30):
+    def __init__(self, model_name=BASE_MODEL, seed=42, max_steps=30, body_learning_rate=2e-5, head_c=1.0):
         self.model_name = model_name
         self.seed = seed
         self.max_steps = max_steps
+        self.body_learning_rate = body_learning_rate
+        self.head_c = head_c
 
     def fit(self, X, y):
         from datasets import Dataset
         from setfit import SetFitModel, Trainer, TrainingArguments
         from transformers import set_seed
         import torch
-        torch.set_num_threads(min(4, os.cpu_count() or 1))
+        torch.set_num_threads(min(int(os.getenv("MEDIA_LENS_CPU_THREADS", "4")), os.cpu_count() or 1))
         set_seed(self.seed)
         self.classes_ = np.unique(y)
         lookup = {label: i for i, label in enumerate(self.classes_)}
         dataset = Dataset.from_dict({"text": list(X), "label": [lookup[label] for label in y]})
         # Reload the pretrained body for each fold; never reuse a body fine-tuned on other folds.
         self.model_ = SetFitModel.from_pretrained(self.model_name, device="cpu", labels=self.classes_.tolist(),
-                                                head_params={"class_weight": "balanced", "max_iter": 2000},
+                                                head_params={"class_weight": "balanced", "max_iter": 2000, "C": self.head_c},
                                                 revision=BASE_REVISION if self.model_name == BASE_MODEL else None)
         args = TrainingArguments(batch_size=16, num_epochs=1, max_steps=self.max_steps,
                                  seed=self.seed, report_to="none", logging_strategy="no", save_strategy="no",
-                                 use_amp=False, show_progress_bar=False)
+                                 use_amp=False, show_progress_bar=False, body_learning_rate=self.body_learning_rate)
         Trainer(model=self.model_, args=args, train_dataset=dataset).train()
         return self
 
