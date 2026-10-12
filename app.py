@@ -6,6 +6,7 @@ import streamlit as st
 
 from dashboard.charts import coverage_chart, sentiment_donut, stacked_chart, topic_heatmap, terms_chart
 from dashboard.data import ROOT, SENTIMENTS, TOPICS, export_csv, filter_corpus, fit_language, load_corpus, top_terms
+from dashboard.model_lab import render_model_lab
 
 st.set_page_config(page_title="Media Lens · Mamdani Coverage", page_icon="◉", layout="wide")
 st.markdown("""<style>
@@ -100,10 +101,10 @@ metrics[2].metric("Topic categories", str(df.topic.nunique()), border=True)
 neg = (df.sentiment == "Negative").mean() * 100 if len(df) else 0
 metrics[3].metric("Negative labels", f"{neg:.1f}%" if len(df) else "—", border=True,
                   help="Share of manually assigned Negative labels in the current selection.")
-st.caption(f"Showing {len(df):,} of {len(corpus):,} annotated articles. Sidebar filters apply across every view.")
+st.caption(f"Showing {len(df):,} of {len(corpus):,} annotated articles. Filters apply to article exploration; Model lab uses a fixed benchmark.")
 
-overview, comparisons, language, articles, method = st.tabs(
-    ["Overview", "Outlet comparison", "Language", "Article explorer", "Methodology"])
+overview, comparisons, language, articles, method, model_lab = st.tabs(
+    ["Overview", "Outlet comparison", "Language", "Article explorer", "Methodology", "Model lab"])
 
 if df.empty:
     with overview:
@@ -276,6 +277,9 @@ with method:
     st.markdown("#### Project credits")
     st.write("Original COMP 370 project: Abdullah, Antonin, and Kihyeok, as recorded in the annotation file. "
              "The dashboard adds interactive exploration of their collected and annotated data.")
+
+with model_lab:
+    render_model_lab(ROOT)
 
 st.divider()
 st.caption("MEDIA LENS · A COMP 370 data science project · Python / pandas / scikit-learn / Streamlit / Plotly")

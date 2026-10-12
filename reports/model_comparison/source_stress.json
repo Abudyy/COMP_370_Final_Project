@@ -1,0 +1,290 @@
+{
+  "dataset_sha256": "bd635666e434a67b135c51af8cf0bab20139bf9fc984f40415055bcae2c18579",
+  "rows": 484,
+  "tasks": {
+    "sentiment": {
+      "model": "embedding_lr",
+      "metrics": {
+        "accuracy": 0.4772727272727273,
+        "macro_f1": 0.4767655778830804,
+        "per_class": {
+          "Negative": {
+            "precision": 0.5207100591715976,
+            "recall": 0.5301204819277109,
+            "f1-score": 0.5253731343283582,
+            "support": 166.0
+          },
+          "Neutral": {
+            "precision": 0.5151515151515151,
+            "recall": 0.35602094240837695,
+            "f1-score": 0.42105263157894735,
+            "support": 191.0
+          },
+          "Positive": {
+            "precision": 0.4098360655737705,
+            "recall": 0.5905511811023622,
+            "f1-score": 0.4838709677419355,
+            "support": 127.0
+          },
+          "accuracy": 0.4772727272727273,
+          "macro avg": {
+            "precision": 0.48189921329896107,
+            "recall": 0.49223086847948333,
+            "f1-score": 0.4767655778830804,
+            "support": 484.0
+          },
+          "weighted avg": {
+            "precision": 0.48942353211630885,
+            "recall": 0.4772727272727273,
+            "f1-score": 0.47331530130849625,
+            "support": 484.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            88,
+            34,
+            44
+          ],
+          [
+            59,
+            68,
+            64
+          ],
+          [
+            22,
+            30,
+            75
+          ]
+        ],
+        "labels": [
+          "Negative",
+          "Neutral",
+          "Positive"
+        ]
+      },
+      "folds": [
+        {
+          "excluded_outlets": [
+            "ny-post"
+          ],
+          "training_rows": 302,
+          "test_rows": 182,
+          "accuracy": 0.46153846153846156
+        },
+        {
+          "excluded_outlets": [
+            "ny-daily-news"
+          ],
+          "training_rows": 385,
+          "test_rows": 99,
+          "accuracy": 0.42424242424242425
+        },
+        {
+          "excluded_outlets": [
+            "gothamist",
+            "the-wall-street-journal",
+            "usa-today"
+          ],
+          "training_rows": 415,
+          "test_rows": 69,
+          "accuracy": 0.463768115942029
+        },
+        {
+          "excluded_outlets": [
+            "abc-news",
+            "ca-national-news",
+            "los-angeles-times",
+            "new-york-magazine",
+            "the-atlantic"
+          ],
+          "training_rows": 413,
+          "test_rows": 67,
+          "accuracy": 0.5074626865671642
+        },
+        {
+          "excluded_outlets": [
+            "business-insider",
+            "fox-news",
+            "nbc-news",
+            "the-new-york-times",
+            "the-seattle-times"
+          ],
+          "training_rows": 413,
+          "test_rows": 67,
+          "accuracy": 0.582089552238806
+        }
+      ]
+    },
+    "topic": {
+      "model": "embedding_lr",
+      "metrics": {
+        "accuracy": 0.4855371900826446,
+        "macro_f1": 0.47600056634554694,
+        "per_class": {
+          "Election": {
+            "precision": 0.6037735849056604,
+            "recall": 0.6274509803921569,
+            "f1-score": 0.6153846153846154,
+            "support": 102.0
+          },
+          "Opinion": {
+            "precision": 0.3684210526315789,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.35,
+            "support": 84.0
+          },
+          "Policy": {
+            "precision": 0.6021505376344086,
+            "recall": 0.5773195876288659,
+            "f1-score": 0.5894736842105263,
+            "support": 97.0
+          },
+          "Political Identity": {
+            "precision": 0.3780487804878049,
+            "recall": 0.5740740740740741,
+            "f1-score": 0.45588235294117646,
+            "support": 54.0
+          },
+          "Political Interaction": {
+            "precision": 0.4642857142857143,
+            "recall": 0.5098039215686274,
+            "f1-score": 0.48598130841121495,
+            "support": 51.0
+          },
+          "Social Response": {
+            "precision": 0.4225352112676056,
+            "recall": 0.3125,
+            "f1-score": 0.3592814371257485,
+            "support": 96.0
+          },
+          "accuracy": 0.4855371900826446,
+          "macro avg": {
+            "precision": 0.4732024802021288,
+            "recall": 0.48908031616617625,
+            "f1-score": 0.47600056634554694,
+            "support": 484.0
+          },
+          "weighted avg": {
+            "precision": 0.48677161588547657,
+            "recall": 0.4855371900826446,
+            "f1-score": 0.4819047311766925,
+            "support": 484.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            64,
+            8,
+            3,
+            12,
+            8,
+            7
+          ],
+          [
+            11,
+            28,
+            12,
+            15,
+            6,
+            12
+          ],
+          [
+            4,
+            7,
+            56,
+            7,
+            9,
+            14
+          ],
+          [
+            5,
+            11,
+            1,
+            31,
+            4,
+            2
+          ],
+          [
+            4,
+            7,
+            4,
+            4,
+            26,
+            6
+          ],
+          [
+            18,
+            15,
+            17,
+            13,
+            3,
+            30
+          ]
+        ],
+        "labels": [
+          "Election",
+          "Opinion",
+          "Policy",
+          "Political Identity",
+          "Political Interaction",
+          "Social Response"
+        ]
+      },
+      "folds": [
+        {
+          "excluded_outlets": [
+            "ny-post"
+          ],
+          "training_rows": 302,
+          "test_rows": 182,
+          "accuracy": 0.4230769230769231
+        },
+        {
+          "excluded_outlets": [
+            "ny-daily-news"
+          ],
+          "training_rows": 385,
+          "test_rows": 99,
+          "accuracy": 0.45454545454545453
+        },
+        {
+          "excluded_outlets": [
+            "gothamist",
+            "the-wall-street-journal",
+            "usa-today"
+          ],
+          "training_rows": 415,
+          "test_rows": 69,
+          "accuracy": 0.6231884057971014
+        },
+        {
+          "excluded_outlets": [
+            "abc-news",
+            "ca-national-news",
+            "los-angeles-times",
+            "new-york-magazine",
+            "the-atlantic"
+          ],
+          "training_rows": 413,
+          "test_rows": 67,
+          "accuracy": 0.4925373134328358
+        },
+        {
+          "excluded_outlets": [
+            "business-insider",
+            "fox-news",
+            "nbc-news",
+            "the-new-york-times",
+            "the-seattle-times"
+          ],
+          "training_rows": 413,
+          "test_rows": 67,
+          "accuracy": 0.5522388059701493
+        }
+      ]
+    }
+  },
+  "purpose": "Exploratory outlet generalization check; not used to select models and not a future-period test.",
+  "comparison_created_at": "2026-10-12T08:19:29.749792+00:00"
+}

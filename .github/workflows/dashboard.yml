@@ -1,7 +1,7 @@
 name: Dashboard checks
 on:
   push:
-    branches: [main, feature/media-lens-dashboard]
+    branches: [main, feature/media-lens-dashboard, feature/article-classifiers]
   pull_request:
     branches: [main]
 

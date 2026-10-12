@@ -6,3 +6,6 @@ venv/
 .DS_Store
 .streamlit/secrets.toml
 *.log
+artifacts/
+ml-runs/
+.venv-ml/
