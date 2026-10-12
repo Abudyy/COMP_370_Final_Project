@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import importlib.metadata
 import json
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -29,11 +30,16 @@ def metrics(y, predicted, labels):
 
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
+    content = json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + "\n"
+    # A stopped benchmark must not leave a partially written cache/report at its final path.
+    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, suffix=".tmp", delete=False) as output:
+        output.write(content)
+        temporary = Path(output.name)
+    temporary.replace(path)
 
 
 def versions():
-    names = ["scikit-learn", "numpy", "pandas", "torch", "setfit", "sentence-transformers", "transformers"]
+    names = ["scikit-learn", "numpy", "pandas", "torch", "setfit", "sentence-transformers", "transformers", "llama-cpp-python"]
     result = {}
     for name in names:
         try:
@@ -280,5 +286,7 @@ def main():
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--artifacts", type=Path, default=DEFAULT_ARTIFACTS)
     p.set_defaults(function=predict)
+    from learning.reliability import add_commands
+    add_commands(sub)
     args = parser.parse_args()
     args.function(args)

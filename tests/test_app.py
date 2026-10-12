@@ -63,3 +63,18 @@ def test_model_lab_displays_both_prediction_tasks():
     at.radio(key="benchmark_task").set_value("Topic").run()
     assert_clean(at)
     assert any(metric.label == "Test macro-F1" for metric in at.metric)
+
+
+def test_reliability_view_can_inspect_a_model_without_changing_the_research_sample():
+    at = app()
+    at.selectbox(key="reliability_model").set_value("setfit_120_low_lr").run()
+    assert_clean(at)
+    assert any("same validation-selected threshold gave 61.3%" in item.value for item in at.warning)
+    at.selectbox(key="reliability_model").set_value("local_llm_0_examples").run()
+    assert_clean(at)
+    assert [m.value for m in at.metric[:4]] == ["484", "15", "6", "34.3%"]
+    assert any("A score near 1 is not proof" in item.value for item in at.caption)
+    assert any(metric.label == "Accepted coverage" for metric in at.metric)
+    at.radio(key="benchmark_task").set_value("Topic").run()
+    assert_clean(at)
+    assert not any(widget.key == "reliability_model" for widget in at.selectbox)

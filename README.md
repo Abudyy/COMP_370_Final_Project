@@ -13,7 +13,7 @@ An interactive dashboard for a COMP 370 group research project on news coverage 
 | Language | Original TF-IDF weighting by topic, outlet, or filtered selection; optional term hiding; downloadable term scores |
 | Article explorer | Searchable annotations, original source links, article details, and CSV export |
 | Methodology | Data provenance, annotation limits, URL matching, and explicitly labeled simulated outlet scores |
-| Model lab | Classifier comparison, held-out accuracy and macro-F1, per-class errors, and development disagreements |
+| Model lab | Classifier comparisons, local LLM experiment, per-class errors, and interactive precision versus coverage |
 
 Sidebar filters for outlet, topic, sentiment, and literal text search apply to article exploration. Model lab shows a fixed benchmark of the original annotations. Plotly charts support hover details and image downloads.
 
@@ -23,6 +23,8 @@ The project now includes a reproducible model comparison and experimental batch 
 
 Read the [model workflow](docs/model_workflow.md) for setup and commands, the [benchmark results](reports/model_comparison/RESULTS.md) for measured scores, and the [annotation policy](docs/annotation_policy.md) for the confirmed sentiment definition. Existing annotations remain authoritative; predictions are stored separately and are not automatically added to the research charts.
 
+The next experiment compares longer SetFit training with a local Qwen3 4B language model using portrayal rules and training-only retrieved human examples. It measures precision versus accepted coverage, with explicit Uncertain labels. See the [reliability workflow](docs/reliability_workflow.md) and [measured reliability results](reports/reliability/RESULTS.md). These historical experiments do not certify performance on new articles or enable automatic publication.
+
 ## Run locally
 
 Use **Python 3.11 or 3.12**. The dashboard runs entirely on committed data; it needs no API keys, external databases, or fresh scraping.
@@ -30,20 +32,20 @@ Use **Python 3.11 or 3.12**. The dashboard runs entirely on committed data; it n
 ```bash
 git clone https://github.com/Abudyy/COMP_370_Final_Project.git
 cd COMP_370_Final_Project
-# To try the classifier additions before their PR is merged:
-git checkout feature/article-classifiers
+# To try the latest model experiments before their PR is merged:
+git checkout feature/llm-reliability
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. Once the classifier additions are merged, the branch checkout is unnecessary.
+On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. Once the additions are merged, the branch checkout is unnecessary.
 
 ## Deploy on Streamlit Community Cloud
 
 1. Sign in at [Streamlit Community Cloud](https://share.streamlit.io/) and connect your GitHub account.
-2. Create an app with repository `Abudyy/COMP_370_Final_Project`, branch `feature/article-classifiers` (or `main` after merging), and main file `app.py`.
+2. Create an app with repository `Abudyy/COMP_370_Final_Project`, branch `feature/llm-reliability` (or `main` after merging), and main file `app.py`.
 3. Select Python 3.12 in advanced settings and deploy. Dependencies are installed from `requirements.txt`; no secrets are required.
 4. Add the resulting public app URL to this README, your personal website, and your resume project entry.
 

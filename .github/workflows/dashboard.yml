@@ -1,9 +1,9 @@
 name: Dashboard checks
 on:
   push:
-    branches: [main, feature/media-lens-dashboard, feature/article-classifiers]
+    branches: [main, feature/media-lens-dashboard, feature/article-classifiers, feature/llm-reliability]
   pull_request:
-    branches: [main]
+    branches: [main, feature/article-classifiers]
 
 permissions:
   contents: read
